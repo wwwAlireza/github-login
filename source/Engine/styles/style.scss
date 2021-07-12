@@ -1,0 +1,146 @@
+html,
+body,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: #0d1117;
+    display: flex;
+    justify-content: center;
+}
+
+.all-container {
+    padding-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container {
+    width: 50px;
+    .logo {
+        width: 100%;
+        opacity: .8;
+    }
+}
+
+.login-text {
+    opacity: .8;
+    margin-top: 30px;
+}
+
+.signin-container {
+    width: 265px;
+    background: #161b22;
+    box-sizing: content-box;
+    border: 1px solid #25262d;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.input {
+    background: #0d1117;
+    border: 0;
+    color: #fff !important;
+    height: 32px;
+    font-weight: lighter;
+    font-size: .9rem;
+}
+
+.input:focus {
+    background: #0d1117 !important;
+}
+
+.inputTitle {
+    font-size: .9rem;
+    opacity: .9;
+    font-weight: lighter;
+}
+
+.forget-password {
+    font-size: .75rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(88, 166, 255);
+}
+
+.signin-btn {
+    width: 100%;
+    height: 32px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #238636;
+    border: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background .2s, opacity .3s;
+    &:hover {
+        background: #2ea043 !important;
+    }
+    &:active {
+        opacity: .5 !important;
+    }
+    &:focus {
+        background: #238636 !important;
+    }
+}
+
+.new-container {
+    width: 270px;
+    padding: 15px;
+    box-sizing: content-box;
+    border: 1px solid rgba(255, 255, 255, .5);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.new-text {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: lighter;
+    opacity: .8;
+}
+
+.links-container {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    font-size: .8rem;
+    margin-top: 4rem;
+}
+
+.alert-container {
+    width: 300px;
+    padding: 15px;
+    color: #ff7b72;
+    background-image: linear-gradient(rgba(248, 81, 73, 0.1));
+    border: 1px solid rgba(248, 81, 73, 0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    font-size: .8rem;
+    border-radius: 5px;
+    .alert-close {
+        width: 1rem;
+        &:hover {
+            opacity: .8;
+            cursor: pointer;
+        }
+    }
+    display: none;
+}
